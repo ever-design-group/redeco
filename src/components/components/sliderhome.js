@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from '@reach/router';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/vertical.css';
 
@@ -40,7 +41,7 @@ export default () => (
                 <div className="inner">
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
-                  <button onClick={()=> window.open(item.link, "_self")}>
+                  <button onClick={()=> navigate(item.link)}>
                     <span className="shine"></span>
                     <span>
                       {item.button}
