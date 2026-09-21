@@ -65,8 +65,8 @@ export default () => (
             <img src="./img/bg-1.jpg" className="imgslickz" alt="REDECO project site"/>
           </div>
 
-          <div className="col-md-6 centered p-md-5 pt-5">
-            <div className="p-md-5">
+          <div className="col-md-6 centered px-4 px-md-5 pt-5 pb-5">
+            <div className="px-2 px-md-5 py-md-5">
               <div className="subheading">Our Mission</div>
               <div className="heading">
                 Innovative, Reliable, High-Quality
@@ -79,8 +79,8 @@ export default () => (
             </div>
           </div>
 
-          <div className="col-md-6 centered p-md-5 pt-5 pb-5">
-            <div className="p-md-5">
+          <div className="col-md-6 centered px-4 px-md-5 pt-5 pb-5">
+            <div className="px-2 px-md-5 py-md-5">
               <div className="subheading">Our Vision</div>
               <div className="heading">
                 A Leading Name in Rwanda
