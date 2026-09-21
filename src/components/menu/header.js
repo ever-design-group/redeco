@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Breakpoint, { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
 import { Link } from '@reach/router';
 
-
-setDefaultBreakpoints([
-  { xs: 0 },
-  { l: 1199 },
-  { xl: 1200 }
-]);
 
 const NavLink = props => (
   <Link
@@ -61,67 +54,61 @@ export default function() {
               </div>
           </div>
 
-              <BreakpointProvider>
-                <Breakpoint l down>
-                  {showmenu &&
-                  <div className='menu'>
-                    <div className='navbar-item'>
-                      <NavLink to="/" onClick={() => btn_icon(!showmenu)}>
-                        Home
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/about" onClick={() => btn_icon(!showmenu)}>
-                        About Us
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/service" onClick={() => btn_icon(!showmenu)}>
-                        Services
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/works" onClick={() => btn_icon(!showmenu)}>
-                        Projects
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/faq" onClick={() => btn_icon(!showmenu)}>
-                        FAQ
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink className='btn-contact' to="/contact" onClick={() => btn_icon(!showmenu)}>
-                        Contact Us
-                      </NavLink>
-                    </div>
-                  </div>
-                  }
-                </Breakpoint>
+          {showmenu &&
+          <div className='menu d-xl-none'>
+            <div className='navbar-item'>
+              <NavLink to="/" onClick={() => btn_icon(!showmenu)}>
+                Home
+              </NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/about" onClick={() => btn_icon(!showmenu)}>
+                About Us
+              </NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/service" onClick={() => btn_icon(!showmenu)}>
+                Services
+              </NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/works" onClick={() => btn_icon(!showmenu)}>
+                Projects
+              </NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/faq" onClick={() => btn_icon(!showmenu)}>
+                FAQ
+              </NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink className='btn-contact' to="/contact" onClick={() => btn_icon(!showmenu)}>
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+          }
 
-                <Breakpoint xl>
-                  <div className='menu'>
-                    <div className='navbar-item'>
-                      <NavLink to="/">Home</NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/about">About Us</NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/service">Services</NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/works">Projects</NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/faq">FAQ</NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <NavLink className='btn-contact' to="/contact">Contact Us</NavLink>
-                    </div>
-                  </div>
-                </Breakpoint>
-              </BreakpointProvider>
+          <div className='menu d-none d-xl-flex'>
+            <div className='navbar-item'>
+              <NavLink to="/">Home</NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/about">About Us</NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/service">Services</NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/works">Projects</NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink to="/faq">FAQ</NavLink>
+            </div>
+            <div className='navbar-item'>
+              <NavLink className='btn-contact' to="/contact">Contact Us</NavLink>
+            </div>
+          </div>
 
       </div>
 

@@ -11,7 +11,10 @@ import Faq from './pages/faq';
 import Contact from './pages/contact';
 
 export const ScrollTop = ({ children, location }) => {
-  React.useEffect(() => window.scrollTo(0, 0), [location])
+  React.useEffect(() => {
+    const id = setTimeout(() => window.scrollTo(0, 0), 0);
+    return () => clearTimeout(id);
+  }, [location])
   return children
 }
 
@@ -20,10 +23,9 @@ const PosedRouter = ({ children }) => (
     {({ location }) => (
       <div id='routerhang'>
         <div key={location.key}>
-        <Loader/>
-          <Router location={location}>
-            {children}
-          </Router>
+        <Router location={location}>
+          {children}
+        </Router>
         </div>
       </div>
     )}
@@ -31,8 +33,9 @@ const PosedRouter = ({ children }) => (
 );
 
 export default () => (
+  <Loader>
   <div className="wraper">
-  
+
     <Header/>
       <PosedRouter>
       <ScrollTop path="/">
@@ -45,6 +48,7 @@ export default () => (
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />
-    
+
   </div>
+  </Loader>
 );
