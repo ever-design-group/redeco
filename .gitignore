@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# legacy static-HTML demo files from the original template (unused by the React app)
+/about-1.html
+/about-2.html
+/about-3.html
+/about.html
+/blog-post.html
+/blog.html
+/contact.html
+/ecommerce-checkout.html
+/ecommerce-form.html
+/ecommerce-payment.html
+/ecommerce.html
+/index-1.html
+/index-slidertext.html
+/index.html
+/projects-detail-2.html
+/projects-detail.html
+/service-1.html
+/service-2.html
+/service-3.html
+/service-4.html
+/works-carousel.html
+/works.html
+/send.php
+/css/
+/font-awesome/
+/images-slider/
+/intro/
+/js/
+/plugin/
+/rs-plugin/
+/img/
