@@ -2095,8 +2095,12 @@ footer{
       flex: 0 0 auto;
       margin: 0 20px 0 0;
     }
+    .process-content{
+      flex: 1 1 auto;
+      min-width: 0;
+    }
     .process-title, .process-text{
-      padding-top: 12px;
+      padding-top: 0;
     }
   }
 }
@@ -2145,6 +2149,7 @@ footer{
   border: 1px solid rgba(255,255,255,.08);
   transition: all .3s ease;
   height: 100%;
+  overflow: hidden;
   i{
     font-size: 2.2rem;
     color: $color;
@@ -2156,15 +2161,33 @@ footer{
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: $white;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   .serve-text{
     font-size: .88rem;
     color: $gray;
     line-height: 1.6;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   &:hover{
     border-color: $color;
     transform: translateY(-4px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .serve-card{
+    padding: 24px 12px;
+    i{
+      font-size: 1.8rem;
+    }
+    .serve-title{
+      font-size: 1rem;
+    }
+    .serve-text{
+      font-size: .82rem;
+    }
   }
 }
 

@@ -216,38 +216,52 @@ export default () => (
         <div className='row m-10-hor process-timeline'>
           <div className='process-step'>
             <div className='process-circle'>01</div>
+            <div className='process-content'>
             <div className='process-title'>Consultation</div>
             <div className='process-text'>Understanding your vision, needs, goals and budget.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>02</div>
+            <div className='process-content'>
             <div className='process-title'>Design & Planning</div>
             <div className='process-text'>Architectural concepts, technical plans and strategy.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>03</div>
+            <div className='process-content'>
             <div className='process-title'>Budgeting</div>
             <div className='process-text'>Cost estimates and technical recommendations.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>04</div>
+            <div className='process-content'>
             <div className='process-title'>Permit Processing</div>
             <div className='process-text'>Assisting with approvals and required permits.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>05</div>
+            <div className='process-content'>
             <div className='process-title'>Execution</div>
             <div className='process-text'>Building with professionalism and efficiency.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>06</div>
+            <div className='process-content'>
             <div className='process-title'>Supervision</div>
             <div className='process-text'>Monitoring quality, timelines and safety.</div>
+            </div>
           </div>
           <div className='process-step'>
             <div className='process-circle'>07</div>
+            <div className='process-content'>
             <div className='process-title'>Delivery</div>
             <div className='process-text'>Final handover with your full satisfaction.</div>
+            </div>
           </div>
         </div>
       </section>
