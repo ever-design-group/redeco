@@ -209,8 +209,8 @@ export default () => (
       <section className='container-fluid black_more'>
         <div className='row m-10-hor'>
           <div className='col-12 text-center'>
-            <div className='subheading'>How We Work</div>
-            <div className='heading'>From Concept to Completion</div>
+            <div className='subheading'>How It Works</div>
+            <div className='heading heading-split'>From Concept to <strong>Completion</strong></div>
           </div>
         </div>
         <div className='row m-10-hor process-timeline'>

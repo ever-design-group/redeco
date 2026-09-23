@@ -917,7 +917,11 @@ section{
 }
 /* home */
 .subheading{
-  font-size: 1.3rem;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $gray;
   margin-bottom: 15px;
 }
 .heading{
@@ -926,6 +930,12 @@ section{
   line-height: normal;
   margin-bottom: 15px;
   letter-spacing: 1px;
+}
+.heading-split{
+  font-weight: 300;
+  strong{
+    font-weight: 700;
+  }
 }
 .content{
   
