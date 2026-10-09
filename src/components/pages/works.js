@@ -53,12 +53,6 @@ const projects = [
     desc: "A bold white facade with a dark framed balcony and full-height glazing."
   },
   {
-    src: "/img/redeco/volcanoes-retreat.jpg",
-    tag: "Hospitality",
-    title: "Volcanoes Eco Retreat",
-    desc: "An eco retreat design in warm earth tones, set in landscaped grounds with mountain views."
-  },
-  {
     src: "/img/redeco/interior-open-plan.jpg",
     tag: "Interior",
     title: "Open-Plan Living Interior",
