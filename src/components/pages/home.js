@@ -22,11 +22,18 @@ export default () => (
   <Seo path="/" description="REDECO Ltd: architectural design, building construction, supervision, engineering consultancy and construction permit assistance in Rwanda. Based in Gisenyi, Rubavu."/>
       <section className="jumbotron jumbomain">
           <Slider />
-          <div className="icon-scroll-wraper">
+          <button
+            className="icon-scroll-wraper"
+            onClick={() => {
+              const hero = document.querySelector('.jumbomain');
+              window.scrollTo({ top: hero.offsetTop + hero.offsetHeight, behavior: 'smooth' });
+            }}
+            aria-label="Scroll down"
+          >
             <div className="icon-scroll">
               <div className="icon-scroll-screen"></div>
             </div>
-          </div>
+          </button>
       </section>
 
       <section className='container-fluid black_more'>

@@ -495,7 +495,10 @@ section{
       background-color:#fff;
       }
        &.sticky {
-       position: absolute !important;
+       /* stay in the page flow on smaller screens so content doesn't jump while scrolling */
+       position: relative !important;
+       animation: none;
+       -webkit-animation: none;
        }
      }
     &.sticky {
