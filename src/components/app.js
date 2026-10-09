@@ -1,6 +1,7 @@
 import React from 'react';
 import { Router, Location } from '@reach/router';
 import ScrollToTopBtn from './menu/ScrollToTop';
+import WhatsAppButton from './components/whatsapp';
 import Loader from './menu/loader';
 import Header from './menu/header';
 import Home from './pages/home';
@@ -50,6 +51,7 @@ export default () => (
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />
+    <WhatsAppButton />
 
   </div>
   </Loader>
