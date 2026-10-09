@@ -76,7 +76,7 @@ const categories = [
 
 export default () => (
 <div>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/bg-serv-3.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/karembure/3.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>

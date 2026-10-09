@@ -9,6 +9,7 @@ import Works from './pages/works';
 import Service from './pages/service';
 import Faq from './pages/faq';
 import Contact from './pages/contact';
+import Project from './pages/project';
 
 export const ScrollTop = ({ children, location }) => {
   React.useEffect(() => {
@@ -45,6 +46,7 @@ export default () => (
         <Service path="/service" />
         <Faq path="/faq" />
         <Contact path="/contact" />
+        <Project path="/projects/:slug" />
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />

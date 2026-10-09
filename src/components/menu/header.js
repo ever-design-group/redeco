@@ -5,11 +5,12 @@ import { Link } from '@reach/router';
 const NavLink = props => (
   <Link
     {...props}
-    getProps={({ isCurrent }) => {
+    getProps={({ isCurrent, location }) => {
       // the object returned here is passed to the
-      // anchor element's props
+      // anchor element's props; project detail pages also highlight "Projects"
+      const active = isCurrent || (props.to === '/works' && location.pathname.startsWith('/projects/'));
       return {
-        className: [props.className, isCurrent ? 'active' : 'non-active'].filter(Boolean).join(' '),
+        className: [props.className, active ? 'active' : 'non-active'].filter(Boolean).join(' '),
       };
     }}
   />
@@ -46,7 +47,7 @@ export default function() {
               <div className='navbar-title navbar-item'>
                 <NavLink to="/">
                 <img
-                    src="./img/logo.png"
+                    src="/img/logo.png"
                     className="img-fluid"
                     alt="#"
                   />

@@ -16,7 +16,7 @@ function sendQuoteRequest(e) {
 
 export default () => (
 <div className='wraperitem'>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/redeco/interior-open-plan.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/gisozi/3.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>

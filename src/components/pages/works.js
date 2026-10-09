@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import designProjects, { cardOf } from '../data/projects';
 
 const projects = [
   {
@@ -32,6 +33,36 @@ const projects = [
     tag: "Interior",
     title: "Bathroom Interior",
     desc: "A clean, modern bathroom with a glass shower enclosure, wall-hung fittings and grey tile finishes."
+  },
+  {
+    src: "/img/team.jpg",
+    tag: "Design",
+    title: "Two-Storey House Design",
+    desc: "A modern two-storey house with a white facade, dark accents and a secure boundary wall."
+  },
+  {
+    src: "/img/testimony.jpg",
+    tag: "Design",
+    title: "Gated Family Home",
+    desc: "Street view of a contemporary family home with a gated compound and parking."
+  },
+  {
+    src: "/img/bg-serv-3.jpg",
+    tag: "Design",
+    title: "Contemporary House Facade",
+    desc: "A bold white facade with a dark framed balcony and full-height glazing."
+  },
+  {
+    src: "/img/redeco/volcanoes-retreat.jpg",
+    tag: "Hospitality",
+    title: "Volcanoes Eco Retreat",
+    desc: "An eco retreat design in warm earth tones, set in landscaped grounds with mountain views."
+  },
+  {
+    src: "/img/redeco/interior-open-plan.jpg",
+    tag: "Interior",
+    title: "Open-Plan Living Interior",
+    desc: "An open-plan living, dining and kitchen space with large windows and warm pendant lighting."
   }
 ];
 
@@ -44,7 +75,7 @@ const categories = [
 
 export default () => (
 <div>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/team.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/gacuriro/1.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>
@@ -82,6 +113,33 @@ export default () => (
           </div>
 
         </div>
+  </section>
+
+  <section className='container-fluid black_more'>
+    <div className='row m-10-hor'>
+      <div className='col-12 text-center'>
+        <div className='subheading'>Featured Projects</div>
+        <div className='heading'>Our Design Projects in Kigali</div>
+      </div>
+    </div>
+    <div className='row m-10-hor mt-4'>
+      <div className='featured-projects'>
+        {designProjects.map(p => (
+          <Link to={`/projects/${p.slug}`} className='fp-card' key={p.slug}>
+            <img src={cardOf(p)} alt={p.name}/>
+            <div className='fp-body'>
+              <div className='fp-tag'>{p.type}</div>
+              <div className='fp-name'>{p.name}</div>
+              <div className='fp-meta'>
+                <span><i className='fa fa-map-marker' aria-hidden='true'></i>{p.location}</span>
+                <span><i className='fa fa-picture-o' aria-hidden='true'></i>{p.images.length} photos</span>
+              </div>
+              <div className='fp-more'>View Project<i className='fa fa-long-arrow-right' aria-hidden='true'></i></div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
   </section>
 
   <section className='container-fluid black_more p-0'>

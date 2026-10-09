@@ -27,6 +27,22 @@ const content = [
     button: "Get a Quote",
     link: "/contact",
     image: "./img/redeco/kigali-retreat.jpg"
+  },
+  {
+    title: "Gisozi Residence",
+    description:
+      "Modern villa design with pool, Gisozi, Kigali.",
+    button: "View Project",
+    link: "/projects/gisozi",
+    image: "/img/projects/gisozi/1.jpg"
+  },
+  {
+    title: "Kicukiro Hillside Villa",
+    description:
+      "Infinity pool terrace above a two-car garage.",
+    button: "View Project",
+    link: "/projects/kicukiro",
+    image: "/img/projects/kicukiro/2.jpg"
   }
 ];
 
