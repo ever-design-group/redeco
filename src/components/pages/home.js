@@ -40,7 +40,7 @@ export default () => (
             <div className='content'>
               REDECO is a professional Rwandan company specializing in
               architectural design, construction, project management,
-              engineering consultancy, and building solutions &mdash;
+              engineering consultancy, and building solutions,
               transforming ideas into reality through creativity, technical
               expertise, and professional execution.
             </div>
@@ -62,13 +62,7 @@ export default () => (
         <div className='row'>
 
           <div className='col-md-6 col-lg-3 p-0'>
-            <div className='features'>
-              <div className='bg'>
-                <img
-                    src="./img/bg-serv-1.jpg"
-                    alt="Architectural design"
-                  />
-              </div>
+            <div className='features features-plain'>
               <div className='content'>
                 <div className='icon-badge'><i className="fa fa-pencil-square-o" aria-hidden="true"></i></div>
                 <div className='heading'>
@@ -88,13 +82,7 @@ export default () => (
           </div>
 
           <div className='col-md-6 col-lg-3 p-0'>
-            <div className='features'>
-              <div className='bg'>
-                <img
-                    src="./img/bg-serv-2.jpg"
-                    alt="Building construction"
-                  />
-              </div>
+            <div className='features features-plain'>
               <div className='content'>
                 <div className='icon-badge'><i className="fa fa-building-o" aria-hidden="true"></i></div>
                 <div className='heading'>
@@ -114,13 +102,7 @@ export default () => (
           </div>
 
           <div className='col-md-6 col-lg-3 p-0'>
-            <div className='features'>
-              <div className='bg'>
-                <img
-                    src="./img/bg-serv-3.jpg"
-                    alt="Supervision and engineering"
-                  />
-              </div>
+            <div className='features features-plain'>
               <div className='content'>
                 <div className='icon-badge'><i className="fa fa-cogs" aria-hidden="true"></i></div>
                 <div className='heading'>
@@ -139,13 +121,7 @@ export default () => (
           </div>
 
           <div className='col-md-6 col-lg-3 p-0'>
-            <div className='features'>
-              <div className='bg'>
-                <img
-                    src="./img/service3.jpg"
-                    alt="Permits and materials supply"
-                  />
-              </div>
+            <div className='features features-plain'>
               <div className='content'>
                 <div className='icon-badge'><i className="fa fa-file-text-o" aria-hidden="true"></i></div>
                 <div className='heading'>
@@ -209,7 +185,7 @@ export default () => (
       <section className='container-fluid black_more'>
         <div className='row m-10-hor'>
           <div className='col-12 text-center'>
-            <div className='subheading'>How It Works</div>
+            <div className='subheading-eyebrow'>How It Works</div>
             <div className='heading heading-split'>From Concept to <strong>Completion</strong></div>
           </div>
         </div>
@@ -279,23 +255,23 @@ export default () => (
         <div className='row no-gutters'>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/gallery/6.jpg" alt="Apartment building project"/>
+              <img src="./img/redeco/apartment-perspective-2.jpg" alt="Apartment building design"/>
               <div className='photo-card-tag'>Residential</div>
-              <div className='photo-card-cap'>Apartment Building Project</div>
+              <div className='photo-card-cap'>Apartment Building Design</div>
             </Link>
           </div>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/gallery/1.jpg" alt="Building under construction"/>
-              <div className='photo-card-tag'>Structural</div>
-              <div className='photo-card-cap'>Building Under Construction</div>
+              <img src="./img/redeco/eco-retreat.jpg" alt="Eco retreat design"/>
+              <div className='photo-card-tag'>Hospitality</div>
+              <div className='photo-card-cap'>Eco Retreat Design</div>
             </Link>
           </div>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/gallery/4.jpg" alt="Block work and foundations"/>
-              <div className='photo-card-tag'>Foundations</div>
-              <div className='photo-card-cap'>Block Work & Foundations</div>
+              <img src="./img/redeco/interior-living-dining.jpg" alt="Living and dining interior design"/>
+              <div className='photo-card-tag'>Interior</div>
+              <div className='photo-card-cap'>Interior Design</div>
             </Link>
           </div>
         </div>
@@ -317,14 +293,14 @@ export default () => (
           </div>
           <div className='col-12'>
             <div className='row justify-content-center align-items-center mt-4 certifications-row'>
-              <div className='col-4 col-md-2 text-center mb-4'>
-                <img src="./img/certifications/rdb.png" className="img-fluid" alt="Rwanda Development Board" />
+              <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+                <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
               </div>
-              <div className='col-4 col-md-2 text-center mb-4'>
-                <img src="./img/certifications/rsb.png" className="img-fluid" alt="Rwanda Standards Board" />
+              <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+                <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
               </div>
-              <div className='col-4 col-md-2 text-center mb-4'>
-                <img src="./img/certifications/iqs.png" className="img-fluid" alt="Rwanda Institute of Quantity Surveyors" />
+              <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+                <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
               </div>
             </div>
           </div>
@@ -333,10 +309,10 @@ export default () => (
 
       <section className='container-fluid black'>
         <div className='row m-10-hor align-items-center'>
-          <div className='col-md-3 text-center text-md-left mb-4 mb-md-0'>
-            <img src="./img/logo.png" className="img-fluid" style={{maxWidth: '150px'}} alt="REDECO Ltd"/>
+          <div className='col-md-4 col-lg-3 text-center mb-4 mb-md-0'>
+            <img src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
           </div>
-          <div className='col-md-9'>
+          <div className='col-md-8 col-lg-9 pl-md-5'>
             <div className='subheading'>Leadership</div>
             <div className='heading'>Wellars NDATIMANA, Managing Director</div>
             <p className='content'>
@@ -344,10 +320,6 @@ export default () => (
               management of REDECO continues to strengthen the company's
               reputation in the construction and engineering sector.
             </p>
-            <Link className='link' to="/about">
-              <span className="shine"></span>
-              Meet the Team
-            </Link>
           </div>
         </div>
       </section>

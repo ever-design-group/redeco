@@ -23,7 +23,7 @@ export default function() {
 
   return (
     <div>
-    <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/contact.jpg'})`}}>
+    <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/testimony.jpg'})`}}>
         <div className='mainbreadcumb'>
           <div className='container-fluid'>
             <div className='row m-10-hor'>

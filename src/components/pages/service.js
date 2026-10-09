@@ -16,7 +16,7 @@ function sendQuoteRequest(e) {
 
 export default () => (
 <div className='wraperitem'>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/testimony.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/redeco/interior-open-plan.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>
@@ -47,7 +47,7 @@ export default () => (
           <div className='col-md-7'>
             <div className='content'>
               REDECO provides complete construction solutions tailored to
-              individuals, businesses, and institutions &mdash; from concept
+              individuals, businesses, and institutions, from concept
               development and design to permit processing, construction,
               supervision, and project completion.
             </div>
@@ -60,7 +60,7 @@ export default () => (
         <div className='row'>
 
           <div className="col-md-6 px-0">
-            <img src="./img/service.jpg" className="imgslickz" alt="Architectural design"/>
+            <img src="./img/bg-serv-1.jpg" className="imgslickz" alt="Architectural design"/>
           </div>
 
           <div className="col-md-6 centered p-md-5 pt-5 pb-5">
@@ -72,7 +72,7 @@ export default () => (
               <p className="mt-3">
                 Our design team works closely with clients to understand
                 their vision and transform ideas into practical, attractive
-                building concepts &mdash; combining functionality,
+                building concepts, combining functionality,
                 aesthetics, comfort, and cost-efficiency.
               </p>
               <p>
@@ -96,23 +96,23 @@ export default () => (
                 workmanship.
               </p>
               <p>
-                <strong>Residential</strong> &mdash; homes, villas,
+                <strong>Residential:</strong> homes, villas,
                 apartments and residential complexes.<br/>
-                <strong>Commercial</strong> &mdash; offices, shopping
+                <strong>Commercial:</strong> offices, shopping
                 centers, warehouses, hotels and business premises.<br/>
-                <strong>Renovation</strong> &mdash; extensions, finishing
+                <strong>Renovation:</strong> extensions, finishing
                 works and modernization.<br/>
-                <strong>Structural Works</strong> &mdash; foundations,
+                <strong>Structural Works:</strong> foundations,
                 concrete structures, and roofing.
               </p>
             </div>
           </div>
           <div className="col-md-6 px-0">
-            <img src="./img/service1.jpg" className="imgslickz" alt="Building construction"/>
+            <img src="./img/service.jpg" className="imgslickz" alt="Building construction"/>
           </div>
 
           <div className="col-md-6 px-0">
-            <img src="./img/service2.jpg" className="imgslickz" alt="Supervision and engineering"/>
+            <img src="./img/service1.jpg" className="imgslickz" alt="Supervision and engineering"/>
           </div>
           <div className="col-md-6 centered p-md-5 pt-5 pb-5">
             <div className="p-md-5">
@@ -127,9 +127,9 @@ export default () => (
                 approved standards, budgets, and schedules.
               </p>
               <p>
-                Engineering consultancy &mdash; budgeting, feasibility
-                studies, and structural guidance. Electrical installation
-                &mdash; wiring, lighting, power distribution and safety
+                Engineering consultancy: budgeting, feasibility
+                studies, and structural guidance. Electrical installation:
+                wiring, lighting, power distribution and safety
                 systems for residential, commercial and industrial
                 projects.
               </p>
@@ -145,8 +145,8 @@ export default () => (
               <p className="mt-3">
                 Starting a construction project requires proper approvals.
                 We assist clients throughout the permit application
-                process &mdash; document preparation, submissions, and
-                coordination with relevant authorities &mdash; to keep it
+                process, including document preparation, submissions, and
+                coordination with relevant authorities, to keep it
                 simple and stress-free.
               </p>
               <p>
@@ -157,7 +157,7 @@ export default () => (
             </div>
           </div>
           <div className="col-md-6 px-0">
-            <img src="./img/service3.jpg" className="imgslickz" alt="Construction permits and materials supply"/>
+            <img src="./img/redeco/interior-study.jpg" className="imgslickz" alt="Construction permits and materials supply"/>
           </div>
 
         </div>
@@ -166,7 +166,7 @@ export default () => (
   <section className='container-fluid black pb-0'>
     <div className='row m-10-hor'>
       <div className='col-12 text-center'>
-        <div className='subheading'>How It Works</div>
+        <div className='subheading-eyebrow'>How It Works</div>
         <div className='heading heading-split'>From Concept to <strong>Completion</strong></div>
       </div>
     </div>
@@ -227,14 +227,14 @@ export default () => (
       </div>
       <div className='col-12'>
         <div className='row justify-content-center align-items-center mt-4 certifications-row'>
-          <div className='col-4 col-md-2 text-center mb-4'>
-            <img src="./img/certifications/rdb.png" className="img-fluid" alt="Rwanda Development Board" />
+          <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+            <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
           </div>
-          <div className='col-4 col-md-2 text-center mb-4'>
-            <img src="./img/certifications/rsb.png" className="img-fluid" alt="Rwanda Standards Board" />
+          <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+            <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
           </div>
-          <div className='col-4 col-md-2 text-center mb-4'>
-            <img src="./img/certifications/iqs.png" className="img-fluid" alt="Rwanda Institute of Quantity Surveyors" />
+          <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+            <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
           </div>
         </div>
       </div>
@@ -250,7 +250,7 @@ export default () => (
       <div className='col-12'>
         <div className='faq-list'>
           <FaqItem q="Do you offer free consultations?" a="Yes. The first step in our process is a consultation to understand your vision, needs, goals and budget before any commitment." />
-          <FaqItem q="Can you handle both design and construction on the same project?" a="Yes, REDECO handles every stage — from architectural design through construction, supervision and completion — so you work with one team throughout." />
+          <FaqItem q="Can you handle both design and construction on the same project?" a="Yes, REDECO handles every stage, from architectural design through construction, supervision and completion, so you work with one team throughout." />
           <FaqItem q="Do you supply construction materials too?" a="Yes. We supply quality building materials, hardware, plumbing and electrical materials and construction accessories to support smooth project execution." />
         </div>
       </div>

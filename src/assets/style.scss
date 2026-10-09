@@ -405,10 +405,17 @@ section{
         top: 0px;
         left: 0px;
         padding: 0;
-        width: 70px;
+        width: 84px;
         border-bottom: none;
         a{
           padding: 0;
+        }
+        img{
+          display: block;
+          background: #fff;
+          border-radius: 50%;
+          padding: 3px;
+          box-shadow: 0 0 0 3px rgba(255,255,255,.25), 0 4px 14px rgba(0,0,0,.45);
         }
       }
     }
@@ -580,7 +587,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.1);
+    background: linear-gradient(90deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.2) 100%);
     bottom: 0;
     left: 0;
 }
@@ -852,10 +859,11 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, $black, rgba(0,0,0,.1));
-    opacity: .5;
+    background: linear-gradient(to bottom, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,.75) 100%);
   }
   .mainbreadcumb{
+    position: relative;
+    z-index: 1;
     padding: 320px 0 30px;
     h1{
       margin-bottom: 0;
@@ -917,6 +925,10 @@ section{
 }
 /* home */
 .subheading{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+.subheading-eyebrow{
   font-size: .8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1046,14 +1058,14 @@ section{
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgba(5,10,20,.55) 0%, rgba(5,10,20,.8) 100%);
+      background: linear-gradient(to bottom, rgba(5,10,20,.7) 0%, rgba(5,10,20,.88) 100%);
     }
   }
   .content{
     position: relative;
     text-align: center;
     .heading{
-      color: $color;
+      color: $white;
       font-weight: 600;
       font-size: 1.2rem;
       margin-bottom: 10px;
@@ -1382,7 +1394,7 @@ footer{
     height: 100%;
     top: 0;
     left: 0;
-    opacity: .3;
+    opacity: .12;
     img{
       width: 100%;
       height: 100%;
@@ -2252,5 +2264,45 @@ footer{
       font-size: .85rem;
       color: $gray;
     }
+  }
+}
+/* certification / membership logos: identical cards, logo scaled to fit */
+.certifications-row .certification-logo {
+  display: block;
+  width: 100%;
+  height: 130px;
+  padding: 20px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+}
+
+/* REDECO logo on dark sections: the logo's centre is transparent, so give it a white badge */
+.logo-badge{
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 0 0 4px rgba(255,255,255,.15), 0 8px 24px rgba(0,0,0,.5);
+}
+
+/* managing director portrait in the Leadership sections */
+.leader-photo{
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+
+/* home service cards without background photos */
+.features.features-plain{
+  background: #181818;
+  border: 1px solid rgba(255,255,255,.06);
+  transition: background .3s ease;
+  &:hover{
+    background: #1f1f1f;
   }
 }

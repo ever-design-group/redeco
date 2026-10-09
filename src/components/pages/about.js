@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 
 export default () => (
 <div className='wraperitem'>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/testimony.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/redeco/volcanoes-retreat.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>
@@ -37,7 +37,7 @@ export default () => (
             <div className='content'>
               REDECO is a professional Rwandan company specializing in
               architectural design, construction, project management,
-              engineering consultancy, and building solutions &mdash;
+              engineering consultancy, and building solutions,
               transforming ideas into reality through creativity, technical
               expertise, and professional execution.
             </div>
@@ -51,7 +51,7 @@ export default () => (
             </div>
             <div className='content'>
               At REDECO, we believe every project is more than just a
-              structure &mdash; it is an investment, a vision, and a legacy.
+              structure. It is an investment, a vision, and a legacy.
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export default () => (
         <div className='row'>
 
           <div className="col-md-6 px-0">
-            <img src="./img/bg-1.jpg" className="imgslickz" alt="REDECO project site"/>
+            <img src="./img/redeco/simple-villa.jpg" className="imgslickz" alt="Modern villa design"/>
           </div>
 
           <div className="col-md-6 centered px-4 px-md-5 pt-5 pb-5">
@@ -94,7 +94,7 @@ export default () => (
           </div>
 
           <div className="col-md-6 px-0">
-            <img src="./img/bg-2.jpg" className="imgslickz" alt="REDECO project site"/>
+            <img src="./img/redeco/interior-lounge-stairs.jpg" className="imgslickz" alt="Interior design"/>
           </div>
 
         </div>
@@ -118,7 +118,7 @@ export default () => (
           and providing innovative construction solutions.
         </div>
         <div className='content'>
-          At REDECO, we do not simply construct buildings &mdash; we build
+          At REDECO, we do not simply construct buildings; we build
           trust, value, and lasting relationships.
         </div>
       </div>
@@ -199,14 +199,14 @@ export default () => (
         </div>
         <div className='col-12'>
           <div className='row justify-content-center align-items-center mt-4 certifications-row'>
-            <div className='col-4 col-md-2 text-center mb-4'>
-              <img src="./img/certifications/rdb.png" className="img-fluid" alt="Rwanda Development Board" />
+            <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+              <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
             </div>
-            <div className='col-4 col-md-2 text-center mb-4'>
-              <img src="./img/certifications/rsb.png" className="img-fluid" alt="Rwanda Standards Board" />
+            <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+              <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
             </div>
-            <div className='col-4 col-md-2 text-center mb-4'>
-              <img src="./img/certifications/iqs.png" className="img-fluid" alt="Rwanda Institute of Quantity Surveyors" />
+            <div className='col-12 col-sm-4 col-lg-3 mb-4'>
+              <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default () => (
   <section className='container-fluid black'>
     <div className='row m-10-hor align-items-center'>
       <div className='col-md-6'>
-        <img src="./img/logo.png" className="img-fluid" style={{maxWidth: '220px'}} alt="REDECO Ltd"/>
+        <img src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
       </div>
       <div className='col-md-6'>
         <div className='subheading'>Company Leadership</div>

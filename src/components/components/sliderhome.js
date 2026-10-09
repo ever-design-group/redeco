@@ -10,7 +10,7 @@ const content = [
       "Building with Excellence.",
     button: "Our Services",
     link: "/service",
-    image: "./img/team.jpg"
+    image: "./img/redeco/apartment-perspective-1.jpg"
   },
   {
     title: "Real Design & Construction",
@@ -18,15 +18,15 @@ const content = [
       "Quality is our top priority.",
     button: "View Our Projects",
     link: "/works",
-    image: "./img/testimony.jpg"
+    image: "./img/redeco/villa-design.jpg"
   },
   {
     title: "From Concept to Completion",
     description:
-      "Design, permits, construction, supervision — handled end to end.",
+      "Design, permits, construction, supervision, handled end to end.",
     button: "Get a Quote",
     link: "/contact",
-    image: "./img/contact.jpg"
+    image: "./img/redeco/kigali-retreat.jpg"
   }
 ];
 

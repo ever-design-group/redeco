@@ -30,7 +30,7 @@ const categories = [
       },
       {
         q: 'Do you handle both design and construction?',
-        a: 'Yes. We handle every stage of a project — from concept development and design, through permit processing, construction and supervision, to project completion.'
+        a: 'Yes. We handle every stage of a project, from concept development and design, through permit processing, construction and supervision, to project completion.'
       },
       {
         q: 'Can you help with renovations, not just new builds?',
@@ -43,7 +43,7 @@ const categories = [
     items: [
       {
         q: 'Can REDECO help me get a construction permit?',
-        a: 'Yes. We assist clients throughout the permit application process — document preparation, submissions, and coordination with the relevant authorities — to keep it simple and stress-free.'
+        a: 'Yes. We assist clients throughout the permit application process, including document preparation, submissions, and coordination with the relevant authorities, to keep it simple and stress-free.'
       },
       {
         q: 'What does your working process look like?',
@@ -51,7 +51,7 @@ const categories = [
       },
       {
         q: 'Do you supervise the construction yourselves?',
-        a: 'Yes. We provide professional project management and supervision — site inspection, quality control, scheduling, workforce management and safety compliance — throughout every project.'
+        a: 'Yes. We provide professional project management and supervision, including site inspection, quality control, scheduling, workforce management and safety compliance, throughout every project.'
       }
     ]
   },
@@ -76,7 +76,7 @@ const categories = [
 
 export default () => (
 <div>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/testimony.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/bg-serv-3.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>

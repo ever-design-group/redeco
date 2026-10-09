@@ -4,46 +4,34 @@ import Footer from '../components/footer';
 
 const projects = [
   {
-    src: "/img/gallery/1.jpg",
-    tag: "Structural",
-    title: "Building Under Construction",
-    desc: "A multi-storey building on-site in Rwanda, with scaffolding and structural framework in progress ahead of finishing works."
-  },
-  {
-    src: "/img/gallery/2.jpg",
-    tag: "Structural",
-    title: "Structural Works in Progress",
-    desc: "Reinforced concrete columns and slab work being completed to specification before the building envelope is closed in."
-  },
-  {
-    src: "/img/gallery/3.jpg",
-    tag: "Structural",
-    title: "Scaffolding & Framework",
-    desc: "Bamboo scaffolding and safety netting supporting upper-floor construction while work continues on the building below."
-  },
-  {
-    src: "/img/gallery/4.jpg",
-    tag: "Foundations",
-    title: "Block Work & Foundations",
-    desc: "Block walls and foundation work for a residential structure, with landscaping already taking shape around the site."
-  },
-  {
-    src: "/img/gallery/5.jpg",
-    tag: "Supervision",
-    title: "On-Site Supervision",
-    desc: "Our team on-site monitoring block work and structural progress to ensure quality and adherence to plans."
-  },
-  {
     src: "/img/gallery/6.jpg",
     tag: "Residential",
     title: "Apartment Building Project",
     desc: "An apartment building under construction, registered with the Republic of Rwanda under an official project permit."
   },
   {
-    src: "/img/gallery/7.jpg",
-    tag: "Residential",
-    title: "Apartment Building — Site Progress",
-    desc: "Continued progress on the same apartment development, with framework and access stairs in place for upper floors."
+    src: "/img/redeco/apartment-perspective-3.jpg",
+    tag: "Design",
+    title: "Apartment Building Perspective",
+    desc: "3D perspective of a multi-storey apartment building, showing the facade, balconies and landscaped frontage."
+  },
+  {
+    src: "/img/bg-serv-2.jpg",
+    tag: "Design",
+    title: "Modern Family House",
+    desc: "A contemporary two-storey house design with a gated compound, parking and outdoor living space."
+  },
+  {
+    src: "/img/redeco/interior-living-room.jpg",
+    tag: "Interior",
+    title: "Living Room Interior",
+    desc: "A bright living room with a feature TV wall, soft lighting and a comfortable, modern finish."
+  },
+  {
+    src: "/img/redeco/interior-bathroom.jpg",
+    tag: "Interior",
+    title: "Bathroom Interior",
+    desc: "A clean, modern bathroom with a glass shower enclosure, wall-hung fittings and grey tile finishes."
   }
 ];
 
@@ -56,7 +44,7 @@ const categories = [
 
 export default () => (
 <div>
-  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/porto.jpg'})`}}>
+  <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'./img/team.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
         <div className='row m-10-hor'>
@@ -86,8 +74,8 @@ export default () => (
 
           <div className='col-md-7'>
             <div className='content'>
-              A look at REDECO's ongoing construction sites in Rwanda &mdash;
-              from foundation to finishing, delivered with quality
+              A look at REDECO's work in Rwanda: construction sites,
+              architectural designs and interiors, delivered with quality
               materials, skilled labor, and professional project
               management.
             </div>
@@ -100,9 +88,9 @@ export default () => (
     <div className='row no-gutters'>
       <div className='col-12'>
         <div className='photo-card photo-card-lg static'>
-          <img src="./img/gallery/6.jpg" alt="Apartment building project under construction"/>
-          <div className='photo-card-tag'>Featured Project &middot; Residential</div>
-          <div className='photo-card-cap'>Apartment Building Construction &mdash; Rwanda</div>
+          <img src="./img/gallery/1.jpg" alt="Multi-storey building under construction"/>
+          <div className='photo-card-tag'>Featured Project &middot; Construction</div>
+          <div className='photo-card-cap'>Multi-Storey Building Construction, Rwanda</div>
         </div>
       </div>
     </div>
@@ -135,7 +123,7 @@ export default () => (
         <div className='heading'>More Projects</div>
       </div>
     </div>
-    <div className='row m-10-hor mt-4'>
+    <div className='row m-10-hor mt-4 justify-content-start'>
       {projects.map(p => (
         <div className='col-md-6 col-lg-4 mb-4' key={p.title}>
           <div className='photo-card static' style={{marginBottom: '14px'}}>

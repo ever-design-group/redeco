@@ -13,7 +13,7 @@ export default () => (
             <h2 className='font-weight-bold '>REDECO Ltd</h2>
           </div>
           <div className='content'>
-             <p>Real Design and Construction (REDECO) Ltd &mdash; architectural
+             <p>Real Design and Construction (REDECO) Ltd: architectural
              design, construction, project management and engineering
              consultancy in Rwanda.</p>
           </div>
