@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import FaqItem from '../components/FaqItem';
 
 
@@ -23,6 +24,7 @@ export default function() {
 
   return (
     <div>
+  <Seo title="Contact Us" path="/contact" description="Contact REDECO Ltd in Gisenyi, Rubavu for a free quote on design, construction or renovation. Call +250 786 889 420."/>
     <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/kicukiro/3.jpg'})`}}>
         <div className='mainbreadcumb'>
           <div className='container-fluid'>
@@ -89,7 +91,7 @@ export default function() {
         </div>
         <div className='row m-10-hor mt-5'>
           <div className='col-12'>
-            <iframe
+            <iframe loading="lazy"
               title="REDECO office location"
               src="https://maps.google.com/maps?q=Gisenyi%2C%20Rubavu%2C%20Rwanda&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"

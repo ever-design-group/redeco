@@ -3,6 +3,7 @@ import { Link } from '@reach/router';
 import Slider from '../components/sliderhome';
 import Bannercontact from '../components/bannercontact';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import FaqItem from '../components/FaqItem';
 
 function sendQuoteRequest(e) {
@@ -18,6 +19,7 @@ function sendQuoteRequest(e) {
 
 export default () => (
   <div>
+  <Seo path="/" description="REDECO Ltd: architectural design, building construction, supervision, engineering consultancy and construction permit assistance in Rwanda. Based in Gisenyi, Rubavu."/>
       <section className="jumbotron jumbomain">
           <Slider />
           <div className="icon-scroll-wraper">
@@ -255,21 +257,21 @@ export default () => (
         <div className='row no-gutters'>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/redeco/apartment-perspective-2.jpg" alt="Apartment building design"/>
+              <img loading="lazy" decoding="async" src="./img/redeco/apartment-perspective-2.jpg" alt="Apartment building design"/>
               <div className='photo-card-tag'>Residential</div>
               <div className='photo-card-cap'>Apartment Building Design</div>
             </Link>
           </div>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/redeco/eco-retreat.jpg" alt="Eco retreat design"/>
+              <img loading="lazy" decoding="async" src="./img/redeco/eco-retreat.jpg" alt="Eco retreat design"/>
               <div className='photo-card-tag'>Hospitality</div>
               <div className='photo-card-cap'>Eco Retreat Design</div>
             </Link>
           </div>
           <div className='col-md-4 p-0'>
             <Link to="/works" className='photo-card'>
-              <img src="./img/redeco/interior-living-dining.jpg" alt="Living and dining interior design"/>
+              <img loading="lazy" decoding="async" src="./img/redeco/interior-living-dining.jpg" alt="Living and dining interior design"/>
               <div className='photo-card-tag'>Interior</div>
               <div className='photo-card-cap'>Interior Design</div>
             </Link>
@@ -294,13 +296,13 @@ export default () => (
           <div className='col-12'>
             <div className='row justify-content-center align-items-center mt-4 certifications-row'>
               <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-                <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
+                <img loading="lazy" decoding="async" src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
               </div>
               <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-                <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
+                <img loading="lazy" decoding="async" src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
               </div>
               <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-                <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
+                <img loading="lazy" decoding="async" src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
               </div>
             </div>
           </div>
@@ -310,7 +312,7 @@ export default () => (
       <section className='container-fluid black'>
         <div className='row m-10-hor align-items-center'>
           <div className='col-md-4 col-lg-3 text-center mb-4 mb-md-0'>
-            <img src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
+            <img loading="lazy" decoding="async" src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
           </div>
           <div className='col-md-8 col-lg-9 pl-md-5'>
             <div className='subheading'>Leadership</div>

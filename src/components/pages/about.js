@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 
 
 export default () => (
 <div className='wraperitem'>
+  <Seo title="About Us" path="/about" description="Learn about REDECO Ltd, a registered Rwandan design and construction company in Gisenyi, Rubavu, led by Managing Director Wellars NDATIMANA."/>
   <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/karembure/1.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
@@ -62,7 +64,7 @@ export default () => (
         <div className='row'>
 
           <div className="col-md-6 px-0">
-            <img src="./img/redeco/simple-villa.jpg" className="imgslickz" alt="Modern villa design"/>
+            <img loading="lazy" decoding="async" src="./img/redeco/simple-villa.jpg" className="imgslickz" alt="Modern villa design"/>
           </div>
 
           <div className="col-md-6 centered px-4 px-md-5 pt-5 pb-5">
@@ -94,7 +96,7 @@ export default () => (
           </div>
 
           <div className="col-md-6 px-0">
-            <img src="./img/redeco/interior-lounge-stairs.jpg" className="imgslickz" alt="Interior design"/>
+            <img loading="lazy" decoding="async" src="./img/redeco/interior-lounge-stairs.jpg" className="imgslickz" alt="Interior design"/>
           </div>
 
         </div>
@@ -200,13 +202,13 @@ export default () => (
         <div className='col-12'>
           <div className='row justify-content-center align-items-center mt-4 certifications-row'>
             <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-              <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
+              <img loading="lazy" decoding="async" src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
             </div>
             <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-              <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
+              <img loading="lazy" decoding="async" src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
             </div>
             <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-              <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
+              <img loading="lazy" decoding="async" src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
             </div>
           </div>
         </div>
@@ -216,7 +218,7 @@ export default () => (
   <section className='container-fluid black'>
     <div className='row m-10-hor align-items-center'>
       <div className='col-md-6'>
-        <img src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
+        <img loading="lazy" decoding="async" src="./img/redeco/managing-director.jpg" className="img-fluid leader-photo" alt="Wellars NDATIMANA, Managing Director of REDECO"/>
       </div>
       <div className='col-md-6'>
         <div className='subheading'>Company Leadership</div>
@@ -305,7 +307,7 @@ export default () => (
     </div>
     <div className='row no-gutters mt-4'>
       <div className='col-12'>
-        <iframe
+        <iframe loading="lazy"
           title="REDECO service area"
           src="https://maps.google.com/maps?q=Gisenyi%2C%20Rubavu%2C%20Rwanda&t=&z=12&ie=UTF8&iwloc=&output=embed"
           width="100%"

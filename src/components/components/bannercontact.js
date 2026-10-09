@@ -6,7 +6,7 @@ export default () => (
         <div className='row'>
 
           <div className='col-md-6'>
-            <img src='./img/redeco/modern-house-garden.jpg' alt='REDECO project site' className='w-100 border-radius'/>
+            <img loading="lazy" decoding="async" src='./img/redeco/modern-house-garden.jpg' alt='REDECO project site' className='w-100 border-radius'/>
           </div>
           <div className='col-md-6 centered'>
             <div>

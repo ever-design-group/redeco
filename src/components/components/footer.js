@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 export default () => (
   <footer className='container-fluid black_more'>
   <div className='bg-footer'>
-    <img src='/img/footer-img.jpg' alt='bg-footer'/>
+    <img loading="lazy" decoding="async" src='/img/footer-img.jpg' alt='bg-footer'/>
   </div>
     <div className='row m-10-hor'>
       <div className='col-lg-3 col-md-6'>

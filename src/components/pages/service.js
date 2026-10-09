@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import FaqItem from '../components/FaqItem';
 
 function sendQuoteRequest(e) {
@@ -16,6 +17,7 @@ function sendQuoteRequest(e) {
 
 export default () => (
 <div className='wraperitem'>
+  <Seo title="Services" path="/service" description="Architectural design, building construction, supervision and engineering, permit processing and materials supply across Rwanda by REDECO Ltd."/>
   <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/gisozi/3.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
@@ -60,7 +62,7 @@ export default () => (
         <div className='row'>
 
           <div className="col-md-6 px-0">
-            <img src="./img/bg-serv-1.jpg" className="imgslickz" alt="Architectural design"/>
+            <img loading="lazy" decoding="async" src="./img/bg-serv-1.jpg" className="imgslickz" alt="Architectural design"/>
           </div>
 
           <div className="col-md-6 centered p-md-5 pt-5 pb-5">
@@ -108,11 +110,11 @@ export default () => (
             </div>
           </div>
           <div className="col-md-6 px-0">
-            <img src="./img/service.jpg" className="imgslickz" alt="Building construction"/>
+            <img loading="lazy" decoding="async" src="./img/service.jpg" className="imgslickz" alt="Building construction"/>
           </div>
 
           <div className="col-md-6 px-0">
-            <img src="./img/service1.jpg" className="imgslickz" alt="Supervision and engineering"/>
+            <img loading="lazy" decoding="async" src="./img/service1.jpg" className="imgslickz" alt="Supervision and engineering"/>
           </div>
           <div className="col-md-6 centered p-md-5 pt-5 pb-5">
             <div className="p-md-5">
@@ -157,7 +159,7 @@ export default () => (
             </div>
           </div>
           <div className="col-md-6 px-0">
-            <img src="./img/redeco/interior-study.jpg" className="imgslickz" alt="Construction permits and materials supply"/>
+            <img loading="lazy" decoding="async" src="./img/redeco/interior-study.jpg" className="imgslickz" alt="Construction permits and materials supply"/>
           </div>
 
         </div>
@@ -228,13 +230,13 @@ export default () => (
       <div className='col-12'>
         <div className='row justify-content-center align-items-center mt-4 certifications-row'>
           <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-            <img src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
+            <img loading="lazy" decoding="async" src="./img/certifications/rdb-logo.png" className="certification-logo" alt="Rwanda Development Board" />
           </div>
           <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-            <img src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
+            <img loading="lazy" decoding="async" src="./img/certifications/ier.png" className="certification-logo" alt="Institute of Engineering Rwanda" />
           </div>
           <div className='col-12 col-sm-4 col-lg-3 mb-4'>
-            <img src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
+            <img loading="lazy" decoding="async" src="./img/certifications/iqs.png" className="certification-logo" alt="Rwanda Institute of Quantity Surveyors" />
           </div>
         </div>
       </div>

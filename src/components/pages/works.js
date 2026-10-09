@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import designProjects, { cardOf } from '../data/projects';
 
 const projects = [
@@ -69,6 +70,7 @@ const categories = [
 
 export default () => (
 <div>
+  <Seo title="Projects" path="/works" description="Explore REDECO's villa and residential design projects in Kigali, plus construction sites and interiors across Rwanda."/>
   <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/gacuriro/1.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>
@@ -120,7 +122,7 @@ export default () => (
       <div className='featured-projects'>
         {designProjects.map(p => (
           <Link to={`/projects/${p.slug}`} className='fp-card' key={p.slug}>
-            <img src={cardOf(p)} alt={p.name}/>
+            <img loading="lazy" decoding="async" src={cardOf(p)} alt={p.name}/>
             <div className='fp-body'>
               <div className='fp-tag'>{p.type}</div>
               <div className='fp-name'>{p.name}</div>
@@ -140,7 +142,7 @@ export default () => (
     <div className='row no-gutters'>
       <div className='col-12'>
         <div className='photo-card photo-card-lg static'>
-          <img src="./img/gallery/1.jpg" alt="Multi-storey building under construction"/>
+          <img loading="lazy" decoding="async" src="./img/gallery/1.jpg" alt="Multi-storey building under construction"/>
           <div className='photo-card-tag'>Featured Project &middot; Construction</div>
           <div className='photo-card-cap'>Multi-Storey Building Construction, Rwanda</div>
         </div>
@@ -179,7 +181,7 @@ export default () => (
       {projects.map(p => (
         <div className='col-md-6 col-lg-4 mb-4' key={p.title}>
           <div className='photo-card static' style={{marginBottom: '14px'}}>
-            <img src={p.src} alt={p.title}/>
+            <img loading="lazy" decoding="async" src={p.src} alt={p.title}/>
             <div className='photo-card-tag'>{p.tag}</div>
             <div className='photo-card-cap'>{p.title}</div>
           </div>

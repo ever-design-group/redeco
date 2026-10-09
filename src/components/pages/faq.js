@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import FaqItem from '../components/FaqItem';
 
 const categories = [
@@ -76,6 +77,7 @@ const categories = [
 
 export default () => (
 <div>
+  <Seo title="FAQ" path="/faq" description="Answers to common questions about REDECO Ltd, our construction services, permits, pricing and how we work."/>
   <section className='jumbotron breadcumb' style={{backgroundImage: `url(${'/img/projects/karembure/3.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container-fluid'>

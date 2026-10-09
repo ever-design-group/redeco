@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from '@reach/router';
 import Footer from '../components/footer';
+import Seo from '../components/seo';
 import projects, { coverOf } from '../data/projects';
 
 const Lightbox = ({ images, index, onClose, onMove }) => {
@@ -29,7 +30,7 @@ const Lightbox = ({ images, index, onClose, onMove }) => {
           <i className='fa fa-angle-left' aria-hidden='true'></i>
         </button>}
       <figure className='lightbox-figure' onClick={e => e.stopPropagation()}>
-        <img src={image.src} alt={image.caption}/>
+        <img loading="lazy" decoding="async" src={image.src} alt={image.caption}/>
         <figcaption>
           <span>{image.caption}</span>
           <span className='lightbox-count'>{index + 1} / {images.length}</span>
@@ -89,6 +90,7 @@ export default ({ slug }) => {
 
   return (
     <div>
+      <Seo title={`${project.name}, ${project.location}`} path={`/projects/${project.slug}`} description={project.summary} image={coverOf(project)}/>
       <section className='project-hero' style={{backgroundImage: `url('${coverOf(project)}')`}}>
         <div className='project-hero-inner m-10-hor'>
           <div className='project-crumbs'>
@@ -156,7 +158,7 @@ export default ({ slug }) => {
           {gallery.map((img, k) => (
             <div className={gallery.length === 1 || (gallery.length === 3 && k === 0) ? 'col-12 mb-4' : 'col-md-6 mb-4'} key={img.src}>
               <button className='project-shot' onClick={() => setOpen(img.i)} aria-label={`Open photo: ${img.caption}`}>
-                <img src={img.src} alt={img.caption}/>
+                <img loading="lazy" decoding="async" src={img.src} alt={img.caption}/>
                 <span className='project-shot-cap'>{img.caption}</span>
                 <span className='project-shot-zoom'><i className='fa fa-expand' aria-hidden='true'></i></span>
               </button>
